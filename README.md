@@ -5,8 +5,18 @@ Currently, if you want to play around with them, take a look at `package.py`, wh
 A Makefile is included that performs an automated build for both a local installation and for the MetaCTF web installation.
   A list of users is passed in via the `USERS` environment variable, which will then build the binaries for each user listed.
 
-## Building
-### Local
+## Setup
+### Install Ghidra
+To install an official pre-built multi-platform Ghidra release:  
+* Install [JDK 17 64-bit](https://adoptium.net/temurin/releases)
+* Download a Ghidra [release file](https://github.com/NationalSecurityAgency/ghidra/releases)
+  - **NOTE:** The official multi-platform release file is named 
+    `ghidra_<version>_<release>_<date>.zip` which can be found under the "Assets" drop-down.
+    Downloading either of the files named "Source Code" is not correct for this step.
+* Extract the Ghidra release file
+* Launch Ghidra: `./ghidraRun` (or `ghidraRun.bat` for Windows)
+
+### Building the course
 Build binaries in `obj/{foo,bar}/angr`: <br>
   ```make USERS='foo bar' local```
 
