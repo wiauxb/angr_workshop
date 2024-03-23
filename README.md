@@ -15,6 +15,17 @@ To install an official pre-built multi-platform Ghidra release:
     Downloading either of the files named "Source Code" is not correct for this step.
 * Extract the Ghidra release file
 * Launch Ghidra: `./ghidraRun` (or `ghidraRun.bat` for Windows)
+### Or for the nerdy nerds
+Every thing we do with Ghidra is identifying adresses. So if you are confortable with assembly and that you like to live in your good old terminal then you can just use `objdump`.
+
+I advise you
+```console
+objdump -D <binary_path> --disassembler-color=color | less
+```
+or to look for symbols (strings etc)
+```console
+objdump -s <binary_path> | less
+```
 
 ### Building the course
 Build binaries in `obj/{foo,bar}/angr`: <br>
