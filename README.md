@@ -1,9 +1,11 @@
-Eventually, this README will have complete and more detailed information about building, installing, and playing the levels.
+# Angr Workshop - CyberExcellence
+This repository contains all necessery material for an Angr introduction workshop 
 
-Currently, if you want to play around with them, take a look at `package.py`, which builds the levels, and `dist/` which generally has an up-to-date build of each of the levels.
+---
 
-A Makefile is included that performs an automated build for both a local installation and for the MetaCTF web installation.
-  A list of users is passed in via the `USERS` environment variable, which will then build the binaries for each user listed.
+A Makefile is included that performs an automated build for installation.
+
+A list of users is passed in via the `USERS` environment variable, which will then build the binaries for each user listed.
 
 ## Setup
 ### Install Ghidra
