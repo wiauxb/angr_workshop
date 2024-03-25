@@ -3,7 +3,7 @@ import os
 import sys
 import shutil
 
-exos = ["ais3_crackme"]
+exos = ["ais3_crackme", "fairlight"]
 
 
 def copy_to(path):
