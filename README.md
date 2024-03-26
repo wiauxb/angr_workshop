@@ -29,11 +29,11 @@ or to look for symbols (strings etc)
 objdump -s <binary_path> | less
 ```
 
-### Building the course
-Build binaries in `obj/{foo,bar}/angr`: <br>
-  ```make USERS='foo bar' local```
+### Building the exercices
+The `make` command will build all the necessary binaries and put all the exercices template in `obj/<username>/angr`
+  ```make USERS='<username>' local```
 
-* You can go to the target directory (`obj/{foo,bar}/angr`), you'll find the built binaries as well as the python files to play the levels
+You can then go to the target directory (`obj/<username>/angr`), you'll find the built binaries as well as the python files to play the levels
 
 ## Troubleshooting
 While compiling using "`make USERS=<user> local`" you might have the following error: <br>
