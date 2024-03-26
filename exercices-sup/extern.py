@@ -3,10 +3,10 @@ import os
 import sys
 import shutil
 
-exos = ["ais3_crackme", "fairlight"]
+exos = ["ais3_crackme", "fairlight", "dynamite_hard"]
 
 
-def copy_to(path):
+def copy_exos(path):
     for exo in exos:
         dest_dir = os.path.join(path, exo)
         if not os.path.exists(dest_dir):
@@ -21,6 +21,11 @@ def copy_to(path):
             if os.path.isfile(src_file):
                 # Copy the file to the destination directory
                 shutil.copy2(src_file, dest_file)
+
+
+def copy_to(path):
+    copy_exos(path)
+    shutil.copy2("README.md", path)
 
 
 if __name__ == '__main__':
