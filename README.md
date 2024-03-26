@@ -43,3 +43,9 @@ While compiling using "`make USERS=<user> local`" you might have the following e
 One easy fix is to install the missing headers and libraries using: <br>
   ```sudo apt-get install gcc-multilib```
 
+---
+
+## Solutions
+The solutions of the exercices can be found in `solutions.zip` with password: `4ngr2024`.
+
+* NOTE: the addresses used in the solutions could differ from those compiled on your computer.
