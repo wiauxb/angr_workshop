@@ -31,6 +31,7 @@ objdump -s <binary_path> | less
 
 ### Building the exercices
 The `make` command will build all the necessary binaries and put all the exercices template in `obj/<username>/angr`
+
   ```make USERS='<username>' local```
 
 You can then go to the target directory (`obj/<username>/angr`), you'll find the built binaries as well as the python files to play the levels
